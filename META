@@ -1,5 +1,11 @@
-verson = "0.3"
-description = "Oclock: Precise POSIX clock for Ocaml"
+# OASIS_START
+# DO NOT EDIT (digest: 40a2da95c7a0f1725a3adcbb4280258a)
+version = "0.3.0"
+description = "Precise POSIX clock for OCaml"
 archive(byte) = "oclock.cma"
+archive(byte, plugin) = "oclock.cma"
 archive(native) = "oclock.cmxa"
+archive(native, plugin) = "oclock.cmxs"
+exists_if = "oclock.cma"
+# OASIS_STOP
 

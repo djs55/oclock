@@ -1,0 +1,24 @@
+# OASIS_START
+# DO NOT EDIT (digest: 5c9d6abb6e4c2ea1c0711912e8a92728)
+# Ignore VCS directories, you can use the same kind of rule outside 
+# OASIS_START/STOP if you want to exclude directories that contains 
+# useless stuff for the build process
+<**/.svn>: -traverse
+<**/.svn>: not_hygienic
+".bzr": -traverse
+".bzr": not_hygienic
+".hg": -traverse
+".hg": not_hygienic
+".git": -traverse
+".git": not_hygienic
+"_darcs": -traverse
+"_darcs": not_hygienic
+# Library oclock
+"oclock.cmxs": use_oclock
+<oclock.{cma,cmxa}>: oasis_library_oclock_cclib
+"liboclock_stubs.lib": oasis_library_oclock_cclib
+"dlloclock_stubs.dll": oasis_library_oclock_cclib
+"liboclock_stubs.a": oasis_library_oclock_cclib
+"dlloclock_stubs.so": oasis_library_oclock_cclib
+<oclock.{cma,cmxa}>: use_liboclock_stubs
+# OASIS_STOP

@@ -1,0 +1,16 @@
+OASISFormat: 0.3
+Name:        oclock
+Version:     0.3.0
+Synopsis:    Precise POSIX clock for OCaml
+License:     ISC
+Authors:     Mickaël Delahaye <mickael.delahaye@gmail.com>
+Plugins:     META (0.3)
+BuildTools:  ocamlbuild
+
+Library oclock
+  CompiledObject:     best
+  Path:               .
+  Findlibname: 	      oclock
+  Modules:            Oclock
+  CSources:           oclock_stubs.c
+  CCLib:              -lrt
